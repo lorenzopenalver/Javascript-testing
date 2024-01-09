@@ -7,9 +7,9 @@ class Person {
 
   calcIMC() {
     const result = Math.round(this.weight / (this.height * this.height));
-    if (result < 0) {
+    if (result <= 0) {
       return 'no found';
-    } if (result >= 0 && result < 18) {
+    } if (result > 0 && result < 18) {
       return 'down';
     } if (result >= 18 && result <= 24) {
       return 'normal';
