@@ -12,12 +12,14 @@ function subtract(a, b) {
 
 function divide(a, b) {
   if (a === 0 || b === 0) {
-    return null
+    return null;
   }
   return a / b;
 }
 
-
-
-
-module.exports = { sum, divide, subtract, multiply};
+module.exports = {
+  sum,
+  divide,
+  subtract,
+  multiply,
+};
